@@ -1,0 +1,252 @@
+.coverPage{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/CoverpageBackground.jpg");
+    background-size: cover;
+}
+ 
+hr{
+  margin: 0;
+  padding: 0;
+  border-style: dotted;
+  font-size: larger;
+  color: gray;
+}
+
+h2{
+    margin-top: 7rem;
+}
+
+
+span{
+    color: #00645d;
+}
+
+.subButton{
+    margin: 30px;
+    background-color: #009c92;
+}
+
+.Logo{
+    max-width: 50%;
+    height: auto;
+}
+
+/*navbar*/
+
+.navigation{
+    background-color: #009c92;
+}
+
+.blue{
+    height:300vh;
+    background-color: #00645d;
+}
+
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #009c92;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover{
+    color: whitesmoke;
+    transition-delay: 0.1s;
+  }
+
+  .pageLink{
+    color: #bec5c7;
+  }
+
+  .active{
+    color: rgb(227, 221, 221);
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+/* service section */
+
+.servicePage{
+    background-image: url("images/ServicesBackground.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    max-height: auto;
+}
+
+.title{
+    padding: 75px;
+
+}
+
+.Squestion{
+  color: rgb(46, 47, 51);
+}
+
+.active{
+  color: black;
+}
+
+.serviceDesc{
+  margin: 0 75px;
+  font-size: larger;
+  text-align: justify;
+  line-height: 3.5;
+  color: rgb(43, 43, 46);
+}
+
+@media screen and (max-width:1200px){
+  .serviceDesc{
+    line-height: 2.5;
+  }
+}
+
+@media screen and (max-width:650px) {
+
+  .serviceDesc{
+    margin: 10px;
+    line-height: 2;
+  }
+  
+}
+
+.linkServices{
+  text-align: center;
+  padding: 11rem;
+}
+
+/* newletters */
+
+.newsLetters{
+  background-color: rgb(57, 57, 57);
+  color: white;
+ 
+}
+
+
+.newsLetters a{
+  margin: 20px 100px;
+}
+
+.background{
+  margin: 25px 0;
+  padding: 250px 100px 0;
+  width: 100%;
+}
+
+.newsHead{
+  padding: 100px;
+}
+
+.newsDesc{
+  margin: 0 100px;
+  font-size: larger;
+  text-align: justify;
+  line-height: 3.5;
+}
+
+
+
+.newsDesc2{
+  margin: 0 30px;
+  text-align: justify;
+}
+
+@media screen and (max-width:1200px){
+  .newsDesc{
+    line-height: 2.5;
+  }
+
+  .background{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .newsDesc{
+    margin: 0;
+    line-height: 2;
+  }
+
+  .newsLetters a{
+    margin: 10px;
+  }
+  
+  
+  .background{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+/* CONTACT PAGE */
+ 
+.contactPage{
+    background-image: url("images/ConnectUsPage.jpg");
+    background-size: cover;
+    height: 120vh;
+}
+
+@media screen and (max-width:650px) {
+  .contactPage{
+    height: 170vh;  
+  }
+}
+
+.content{
+  color: wheat;
+  padding: 8rem;
+}
+
+.Heading{
+  padding: 2rem;
+}
+
+.hireButton{
+  margin: 4rem 2rem;
+}
+
+.socialIcon{
+  padding: 2rem;
+}
+
+.normalLink{
+  color: white;
+  text-decoration: none;
+}
+
+.normalLink:hover{
+  color: #009c92;
+  transition: 0.1s;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/style-subscription.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="login-form">
+            <h1>Enter contact details</h1>
+            <form action="#" method="post" name="google-sheet">
+                <p>Enter your name</p>
+                <input type="text" name="name" placeholder="Your Name">
+                <p>Enter your E-mail</p>
+                <input type="email" name="email" placeholder="youremail@example.com">
+                <p>Enter your Number</p>
+                <input type="number" name="number" placeholder="XXX-XXX-XXXX">
+                <button type="submit" name="submit">Send</button>
+            </form>
+        </div>
+    </div> 
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyO4v-tY702IKz400HP4vphL7WQpcAHayuMixJ6FofCRi8_Ifn38zsd4XEQlmZnR4upxA/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for giving your details ! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
